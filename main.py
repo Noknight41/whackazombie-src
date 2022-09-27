@@ -173,7 +173,7 @@ class GameManager:
                         loop = False
                         self.menu()
                     # Hit zombie
-                    if self.hit(mouse.get_pos(), self.hole[grave], 113, 91):
+                    if self.hit(mouse.get_pos(), self.hole[grave], 113, 91) and state < 4:
                         state = 3                       
                         live = False
                         interval = 0
